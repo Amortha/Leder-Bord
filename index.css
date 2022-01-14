@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Poppins:ital@1&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#F3F1ff;
+}
+main{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+.section-title{
+color: cornflowerblue;
+font-size: 24px;
+}
+.continer{
+    background-color: #FFFF;
+    width: 870px;
+    /* height: 600px; */
+    padding:30px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.top-players{
+    margin-bottom: 30px;
+}
+.players{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+hr{
+    border:2px solid #D1D1D1;
+}
+/* top blog stayle css */
+.Blog .thamnil img{
+    width: 177px;
+    height: 117px;
+}
+.Blog{
+    display: flex;
+}
+.Blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+
+}
+.blog-author{
+    color:rosybrown;
+    font-size: 16px;
+}
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+
+}
+.Blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* Letast couse  style */
+
+.couses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+}
+.couse .couse-banar img{
+    width: 224 px;
+    height: 104px;
+}
+.couse-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filed{
+    color: chocolate;
+}
+
+/* Rasponsiva mobile */
+
+@media only screen and (max-width:688px) {
+    .continer{
+        width: 100%;
+    }
+   .players, .Blogs,.couses{
+       background-color: crimson;
+       grid-template-columns: repeat( 1,1fr);
+}
+.Blog{
+    margin-left: 50px;
+}
+.player,.Blog,.couses {
+  flex-direction: column;
+}
+}
+/* tablete Device */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .continer{
+        width: 100%;
+}
+ .players, .Blogs,.couses{
+    background-color: yellowgreen;
+    grid-template-columns:repeat(2,1fr);
+}
+.player,.Blog,.couses {
+    flex-direction: column;
+  }
+}
